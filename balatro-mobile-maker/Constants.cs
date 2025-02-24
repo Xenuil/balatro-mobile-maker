@@ -19,13 +19,13 @@ internal static class Constants
     //OpenJDK Download Links
     //TODO: Find JDK links for all platforms
     //Win
-    public const string OpenJDKWinX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-windows-x64.zip";
+    public const string OpenJDKWinX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-windows-x64.zip";
     //public const string OpenJDKWinX86Link = ""; //Uh oh: https://learn.microsoft.com/en-us/java/openjdk/download
-    public const string OpenJDKWinArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-windows-aarch64.zip";
+    public const string OpenJDKWinArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-windows-aarch64.zip";
     //Linux
-    public const string OpenJDKLinuxX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-linux-x64.tar.gz";
-    public const string OpenJDKLinuxArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-linux-aarch64.tar.gz";
+    public const string OpenJDKLinuxX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-linux-x64.tar.gz";
+    public const string OpenJDKLinuxArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-linux-aarch64.tar.gz";
     //macOS
-    public const string OpenJDKOSXX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-macos-x64.tar.gz";
-    public const string OpenJDKOSXArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.3-macos-aarch64.tar.gz";
+    public const string OpenJDKOSXX64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-macos-x64.tar.gz";
+    public const string OpenJDKOSXArm64Link = "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-macos-aarch64.tar.gz";
 } 

@@ -41,44 +41,44 @@ internal class Platform
     {
         if (isWindows)
         {
-            if (!fileExists("jdk-21.0.3+9\\bin\\java.exe"))
+            if (!fileExists("jdk-21.0.6+7\\bin\\java.exe"))
             {
                 Log("Preparing OpenJDK...");
                 fileMove("openjdk", "openjdk.zip");
-                tryDelete("jdk-21.0.3+9");
+                tryDelete("jdk-21.0.6+7");
                 extractZip("openjdk.zip", ".");
             }
 
-            RunCommand("jdk-21.0.3+9\\bin\\java.exe", args);
+            RunCommand("jdk-21.0.6+7\\bin\\java.exe", args);
         }
 
         //TODO: OSX and Linux implementation is purely speculative! Untested!!!
         if (isOSX)
         {
-            if (!fileExists("jdk-21.0.3+9/Contents/Home/bin/java"))
+            if (!fileExists("jdk-21.0.6+7/Contents/Home/bin/java"))
             {
                 Log("Preparing OpenJDK...");
                 fileMove("openjdk", "openjdk.tar.gz");
-                tryDelete("jdk-21.0.3+9");
+                tryDelete("jdk-21.0.6+7");
                 RunCommand("tar", "-xf openjdk.tar.gz");
-                RunCommand("chmod", "-R +x jdk-21.0.3+9");
+                RunCommand("chmod", "-R +x jdk-21.0.6+7");
             }
 
-            RunCommand("./jdk-21.0.3+9/Contents/Home/bin/java", args);
+            RunCommand("./jdk-21.0.6+7/Contents/Home/bin/java", args);
         }
 
         if (isLinux)
         {
-            if (!fileExists("jdk-21.0.3+9/bin/java"))
+            if (!fileExists("jdk-21.0.6+7/bin/java"))
             {
                 Log("Preparing OpenJDK...");
                 fileMove("openjdk", "openjdk.tar.gz");
-                tryDelete("jdk-21.0.3+9");
+                tryDelete("jdk-21.0.6+7");
                 RunCommand("tar", "-xf openjdk.tar.gz");
-                RunCommand("chmod", "-R +x jdk-21.0.3+9");
+                RunCommand("chmod", "-R +x jdk-21.0.6+7");
             }
 
-            RunCommand("./jdk-21.0.3+9/bin/java", args);
+            RunCommand("./jdk-21.0.6+7/bin/java", args);
         }
     }
 

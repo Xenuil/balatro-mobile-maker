@@ -376,7 +376,7 @@ internal class View
             tryDelete("game.love");
 
             tryDelete("platform-tools");
-            tryDelete("jdk-21.0.3+9");
+            tryDelete("jdk-21.0.6+7");
             tryDelete("Balatro-APK-Patch");//TODO: remove when Android build changes
             //tryDelete("icons");//TODO: enable when Android build changes
             tryDelete("Balatro");
